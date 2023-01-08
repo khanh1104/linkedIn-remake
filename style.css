@@ -1,0 +1,33 @@
+nav{
+	display: flex;
+	padding-left: 80px;
+}
+#ico img{
+	height: 40px;
+	width: 40px;
+}
+#search{
+	width: 330px;
+	height: 34px;
+	background-color: #eef3f8;
+	margin-left: 10px;
+	border-radius: 5px;
+	margin-top: 3px;
+}
+#search_box{
+	border: none;
+	width: 300px;
+	height: 30px;
+	background-color: #eef3f8;
+}
+#search_box::placeholder{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+}
+.fa-magnifying-glass{
+	font-size: 16px;
+	color: #5f6163;
+	margin-top: 9px;
+	margin-right: 5px;
+}
