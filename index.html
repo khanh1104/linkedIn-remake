@@ -19,33 +19,71 @@
 			<input type="text" name="" id="search_box" placeholder="Search by title, skill or company">
 		</div>
 		<div id="home" class="nav">
-			<i class="fa-solid fa-house"></i>
-			<p>Home</p>
+			<a href="https://www.linkedin.com/feed/">
+				<i class="fa-solid fa-house"></i>
+				<p>Home</p>
+			</a>
 		</div>
 		<div id="network" class="nav">
-			<i class="fa-solid fa-users"></i>
-			<p>My network</p>
+			<a href="https://www.linkedin.com/mynetwork/">
+				<i class="fa-solid fa-users"></i>
+				<p>My network</p>
+			</a>
 		</div>
 		<div id="job" class="nav">
-			<i class="fa-solid fa-briefcase"></i>
-			<p>Jobs</p>
+			<a href="https://www.linkedin.com/jobs/">
+				<i class="fa-solid fa-briefcase"></i>
+				<p>Jobs</p>
+			</a>
 		</div>
 		<div id="messaging" class="nav">
-			<i class="fa-solid fa-message"></i>
-			<p>Messaging</p>
+			<a href="https://www.linkedin.com/messaging/">
+				<i class="fa-solid fa-message"></i>
+				<p>Messaging</p>
+			</a>
 		</div>
 		<div id="notifications" class="nav">
-			<i class="fa-solid fa-bell"></i>
-			<p>Notifications</p>
+			<a href="https://www.linkedin.com/notifications/">
+				<i class="fa-solid fa-bell"></i>
+				<p>Notifications</p>
+			</a>
 		</div>
 		<div id="user" class="nav">
-			<img src="./assets/user_img/user.jpg" alt="">
+			<img src="./assets/user_img/user.jpg" alt="" id="user_img_small">
 			<p>Me <i class="fa-solid fa-caret-down"></i></p>
+			<div id="user_dropdown">
+				<div id="profile">
+					<img src="./assets/user_img/user.jpg" alt="" id="user_img_big">
+					<div id="name_and_role">
+						<p id="name">Khánh Phạm Gia</p>
+						<p id="role">Fullstack Developer</p>
+					</div>
+				</div>
+				<button id="view_profile"><a
+						href="https://www.linkedin.com/in/kh%C3%A1nh-ph%E1%BA%A1m-gia-304094233/">View
+						Profile</a></button>
+				<div id="account">
+					<p id="account_title">Account</p>
+					<a href="https://www.linkedin.com/premium/products/" id="premium">Try Premium for free</a>
+					<a href="https://www.linkedin.com/mypreferences/d/" id="setting">Settings & Privacy</a>
+					<p>Help</p>
+					<a href="https://www.linkedin.com/mypreferences/d/language/" id="language">Language</a>
+				</div>
+				<div id="manage">
+					<p id="manage_title">Manage</p>
+					<a href="https://www.linkedin.com/in/kh%C3%A1nh-ph%E1%BA%A1m-gia-304094233/recent-activity/"
+						id="activity">Posts & Activity</a>
+					<a href="https://www.linkedin.com/talent/jobs?trk=nav_app_launcher_manage_job_post_nept"
+						id="posting_account">Job posting account</a>
+				</div>
+				<p>Sign out</p>
+			</div>
 		</div>
 		<div id="work" class="nav">
 			<i class="fa-solid fa-grip"></i>
 			<p>Work <i class="fa-solid fa-caret-down"></i></p>
 		</div>
+		<a href="https://www.linkedin.com/premium/products/" id="premium">Try Premium for free</a>
 	</nav>
 	<script src="script.js"></script>
 </body>

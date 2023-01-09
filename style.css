@@ -47,8 +47,8 @@ nav {
 }
 
 #search_box::placeholder {
-	font-size: 14px;
-	font-weight: 500;
+	font-size: 15px;
+	font-weight: 450;
 }
 
 .fa-magnifying-glass {
@@ -62,7 +62,7 @@ nav {
 	margin-left: 10px;
 	text-align: center;
 	font-weight: 100;
-	font-size: 15px;
+	font-size: 14px;
 	width: 80px;
 }
 
@@ -73,6 +73,11 @@ nav {
 
 .nav i {
 	font-size: 24px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #666666;
 }
 
 #job {
@@ -100,4 +105,72 @@ nav {
 
 #work p {
 	margin-top: -15px;
+}
+
+#premium {
+	color: #915907;
+	font-size: 14px;
+	width: 100px;
+	text-align: center;
+}
+
+#user_dropdown {
+	width: 300px;
+	position: absolute;
+	background-color: #fff;
+	top: 65px;
+	left: 875px;
+	border-radius: 10px;
+	padding: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+#user_img_big {
+	width: 55px !important;
+}
+
+#profile {
+	display: flex;
+}
+
+#name {
+	font-weight: 550;
+	font-size: 18px;
+}
+
+#role {
+	font-weight: 425;
+	font-size: 16px;
+	margin-top: 0px !important;
+}
+
+#name_and_role {
+	padding-top: 13px;
+	padding-left: 10px;
+}
+
+#view_profile {
+	border-radius: 25px;
+	width: 280px;
+	height: 28px;
+	background-color: #fff;
+	border: 2px solid #0a66c2;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#view_profile a {
+	color: #0a66c2;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#account {
+	border-top: 1px solid #ccc;
+	padding-top: 20px;
+}
+
+#account_title {
+	font-weight: 500px;
+	font-size: 18px;
 }
