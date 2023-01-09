@@ -1,33 +1,103 @@
-nav{
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f3f2ef;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
 	display: flex;
 	padding-left: 80px;
+	background-color: #fff;
+	padding-top: 10px;
+	color: #666666;
 }
-#ico img{
+
+#ico img {
 	height: 40px;
 	width: 40px;
 }
-#search{
-	width: 330px;
+
+#search {
+	width: 331px;
 	height: 34px;
 	background-color: #eef3f8;
 	margin-left: 10px;
 	border-radius: 5px;
 	margin-top: 3px;
+	padding-left: 5px;
+	outline: none;
+	margin-bottom: 10px;
 }
-#search_box{
+
+#search_box {
 	border: none;
 	width: 300px;
 	height: 30px;
 	background-color: #eef3f8;
+	outline: none;
 }
-#search_box::placeholder{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+#search_box::placeholder {
 	font-size: 14px;
 	font-weight: 500;
 }
-.fa-magnifying-glass{
+
+.fa-magnifying-glass {
 	font-size: 16px;
 	color: #5f6163;
 	margin-top: 9px;
 	margin-right: 5px;
+}
+
+.nav {
+	margin-left: 10px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 15px;
+	width: 80px;
+}
+
+#home {
+	margin-left: 170px;
+	text-align: center;
+}
+
+.nav i {
+	font-size: 24px;
+}
+
+#job {
+	border-bottom: 2.5px solid #000;
+	color: #000;
+}
+
+#user img {
+	border-radius: 50%;
+	width: 23px;
+}
+
+#user p {
+	margin-top: -7px;
+}
+
+#work {
+	border-left: 1px solid #ddd;
+	margin-top: -10px;
+}
+
+#work i {
+	margin-top: 10px;
+}
+
+#work p {
+	margin-top: -15px;
 }
