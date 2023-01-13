@@ -94,6 +94,10 @@ nav {
 	margin-top: -7px;
 }
 
+#user_nav {
+	cursor: pointer;
+}
+
 #work {
 	border-left: 1px solid #ddd;
 	margin-top: -10px;
@@ -108,13 +112,22 @@ nav {
 }
 
 #premium {
-	color: #915907;
-	font-size: 14px;
-	width: 100px;
+	color: #666666;
+	width: 160px;
 	text-align: center;
+	font-weight: 500;
+	font-size: 15px;
+	margin-left: 5px;
+	margin-top: 7px;
 }
 
-#user_dropdown {
+#premium_ico {
+	width: 14px !important;
+	border-radius: 0px !important;
+	margin-left: -10px;
+}
+
+#userDropdown {
 	width: 300px;
 	position: absolute;
 	background-color: #fff;
@@ -123,6 +136,8 @@ nav {
 	border-radius: 10px;
 	padding: 10px 10px 10px 10px;
 	text-align: left;
+	box-shadow: 1px 1px 3px 3px #ccc;
+	display: none;
 }
 
 #user_img_big {
@@ -157,20 +172,108 @@ nav {
 	border: 2px solid #0a66c2;
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
-
-#view_profile a {
+	cursor: pointer;
 	color: #0a66c2;
-	font-size: 18px;
+	color: #0a66c2;
+	font-size: 16px;
 	font-weight: 500;
 }
 
 #account {
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #ddd;
 	padding-top: 20px;
 }
 
 #account_title {
-	font-weight: 500px;
+	font-weight: 500;
 	font-size: 18px;
+	color: #000;
+}
+
+#userDropdown a {
+	display: block;
+}
+
+.account_item {
+	font-weight: 400;
+	font-size: 15px;
+	margin-top: 7px;
+}
+
+#manage {
+	border-top: 1px solid #ddd;
+	padding-top: 20px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+#manage_title {
+	font-weight: 500;
+	font-size: 18px;
+	color: #000;
+}
+
+.manage_item {
+	font-weight: 400;
+	font-size: 15px;
+	margin-top: 7px;
+}
+
+#sign_out {
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 15px;
+	margin-top: 7px;
+}
+
+#profile_link {
+	color: #000;
+}
+
+#body {
+	display: flex;
+}
+
+#menu {
+	background-color: #fff;
+	padding: 30px 10px 10px 20px;
+	height: 415px;
+	width: 250px;
+	margin-left: 75px;
+	margin-top: 20px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+}
+
+.menu_nav {
+	display: block;
+	color: #171717;
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 35px;
+	text-decoration: none;
+}
+
+.menu_nav i {
+	color: #666666;
+	font-size: 20px;
+}
+
+#post_job {
+	border-radius: 25px;
+	width: 250px;
+	height: 50px;
+	border: 2px solid #0a66c2;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	margin-left: -20px;
+}
+
+#post_job_link {
+	color: #0a66c2;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
 }

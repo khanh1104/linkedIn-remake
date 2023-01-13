@@ -49,42 +49,67 @@
 			</a>
 		</div>
 		<div id="user" class="nav">
-			<img src="./assets/user_img/user.jpg" alt="" id="user_img_small">
-			<p>Me <i class="fa-solid fa-caret-down"></i></p>
-			<div id="user_dropdown">
-				<div id="profile">
-					<img src="./assets/user_img/user.jpg" alt="" id="user_img_big">
-					<div id="name_and_role">
-						<p id="name">Khánh Phạm Gia</p>
-						<p id="role">Fullstack Developer</p>
+			<div id="user_nav">
+				<img src="./assets/user_img/user.jpg" alt="" id="user_img_small">
+				<p id="user_title">Me <i class="fa-solid fa-caret-down"></i></p>
+			</div>
+			<div id="userDropdown">
+				<a href="https://www.linkedin.com/in/kh%C3%A1nh-ph%E1%BA%A1m-gia-304094233/" id="profile_link">
+					<div id="profile">
+						<img src="./assets/user_img/user.jpg" alt="" id="user_img_big">
+						<div id="name_and_role">
+							<p id="name">Khánh Phạm Gia</p>
+							<p id="role">Fullstack Developer</p>
+						</div>
 					</div>
-				</div>
-				<button id="view_profile"><a
-						href="https://www.linkedin.com/in/kh%C3%A1nh-ph%E1%BA%A1m-gia-304094233/">View
-						Profile</a></button>
+				</a>
+				<a href="https://www.linkedin.com/in/kh%C3%A1nh-ph%E1%BA%A1m-gia-304094233/"><button
+						id="view_profile">View Profile</button></a>
 				<div id="account">
 					<p id="account_title">Account</p>
-					<a href="https://www.linkedin.com/premium/products/" id="premium">Try Premium for free</a>
-					<a href="https://www.linkedin.com/mypreferences/d/" id="setting">Settings & Privacy</a>
-					<p>Help</p>
-					<a href="https://www.linkedin.com/mypreferences/d/language/" id="language">Language</a>
+					<a href="https://www.linkedin.com/premium/products/" id="premium"><img
+							src="./assets/favicon/premium.png" alt="" id="premium_ico"> Try Premium for free</a>
+					<a href="https://www.linkedin.com/mypreferences/d/" id="setting" class="account_item">Settings &
+						Privacy</a>
+					<a href="#" class="account_item">Help</a>
+					<a href="https://www.linkedin.com/mypreferences/d/language/" id="language"
+						class="account_item">Language</a>
 				</div>
 				<div id="manage">
 					<p id="manage_title">Manage</p>
 					<a href="https://www.linkedin.com/in/kh%C3%A1nh-ph%E1%BA%A1m-gia-304094233/recent-activity/"
-						id="activity">Posts & Activity</a>
+						id="activity" class="manage_item">Posts & Activity</a>
 					<a href="https://www.linkedin.com/talent/jobs?trk=nav_app_launcher_manage_job_post_nept"
-						id="posting_account">Job posting account</a>
+						id="posting_account" class="manage_item">Job posting account</a>
 				</div>
-				<p>Sign out</p>
+				<a href="https://www.linkedin.com/m/logout/" id="sign_out">Sign out</a>
 			</div>
 		</div>
 		<div id="work" class="nav">
 			<i class="fa-solid fa-grip"></i>
 			<p>Work <i class="fa-solid fa-caret-down"></i></p>
 		</div>
-		<a href="https://www.linkedin.com/premium/products/" id="premium">Try Premium for free</a>
 	</nav>
+	<div id="body">
+		<div id="menu">
+			<a class="menu_nav" href="https://www.linkedin.com/my-items/saved-jobs"><i
+					class="fa-solid fa-bookmark"></i>⠀⠀My jobs</a>
+			<a class="menu_nav" href="https://www.linkedin.com/jobs/jam"><i class="fa-solid fa-bell"></i>⠀⠀Job
+				alerts</a>
+			<a class="menu_nav" href="https://www.linkedin.com/skills-demonstration/skills"><i
+					class="fa-solid fa-check"></i> ⠀Demonstrate skills</a>
+			<a class="menu_nav" href="https://www.linkedin.com/interview-prep"><i
+					class="fa-solid fa-note-sticky"></i>⠀⠀Interview prep</a>
+			<a class="menu_nav" href="https://www.linkedin.com/jobs/?showResumeBuilderModal=true"><i
+					class="fa-solid fa-file"></i>⠀⠀Resume Builder</a>
+			<a class="menu_nav" href="http://www.linkedin.com/learning/subscription/career-guidance-hub"><i
+					class="fa-brands fa-youtube"></i>⠀Job seeker guidance</a>
+			<a class="menu_nav" href="https://www.linkedin.com/jobs/application-settings"><i
+					class="fa-solid fa-gear"></i>⠀Application settings</a>
+			<button id="post_job"><a id="post_job_link" href="https://www.linkedin.com/talent/post-a-job"><i
+						class="fa-solid fa-pen-to-square"></i> Post a free job</a></button>
+		</div>
+	</div>
 	<script src="script.js"></script>
 </body>
 
