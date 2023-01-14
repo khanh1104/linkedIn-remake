@@ -277,3 +277,51 @@ nav {
 	font-weight: 500;
 	text-decoration: none;
 }
+
+#search_suggestions {
+	width: 600px;
+	background-color: #fff;
+	padding: 30px 85px 20px 20px;
+	height: 200px;
+	margin-left: 25px;
+	margin-top: 20px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+}
+
+#search_suggestions_title {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.job_link {
+	border-radius: 25px;
+	background-color: #fff;
+	border: 2px solid #0a66c2;
+	cursor: pointer;
+	padding: 0px 10px 0px 10px;
+	margin-top: 10px;
+}
+
+.job_nav {
+	color: #0a66c2;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: lowercase;
+	display: block;
+	margin-top: -2px;
+}
+
+#search_header {
+	display: flex;
+	width: 575px;
+}
+
+#close_button {
+	background-color: transparent;
+	color: #666666;
+	font-size: 20px;
+	margin-left: 325px;
+	cursor: pointer;
+}
