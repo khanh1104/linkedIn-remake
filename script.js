@@ -34,3 +34,7 @@ userNav.addEventListener('click', userDropdownShow);
 closeButton.addEventListener('click', searchSuggestionsHide);
 workNav.addEventListener('click', workDropdownShow);
 workDropdownCloseButton.addEventListener('click', workDropdownHide);
+=======
+search.addEventListener('focusin', searchboxOutlineOn);
+search.addEventListener('focusout', searchboxOutlineOff);
+userNav.addEventListener('click', userDropdownShow);
