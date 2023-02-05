@@ -15,7 +15,7 @@
 	<nav>
 		<a href="https://www.linkedin.com/feed/" id="ico"><img src="/assets/favicon/favicon.ico" alt=""></a>
 		<div id="search">
-			<i class="fa-solid fa-magnifying-glass"></i>
+			<i class="fa-solid fa-magnifying-glass glass"></i>
 			<input type="text" name="" id="search_box" placeholder="Search by title, skill or company">
 		</div>
 		<div id="home" class="nav">
@@ -86,9 +86,69 @@
 			</div>
 		</div>
 		<div id="work" class="nav">
-			<i class="fa-solid fa-grip"></i>
-			<p>Work <i class="fa-solid fa-caret-down"></i></p>
+			<div id="work_nav">
+				<i class="fa-solid fa-grip"></i>
+				<p>Work <i class="fa-solid fa-caret-down"></i></p>
+			</div>
+			<div id="workDropdown_container">
+				<div id="workDropdown">
+					<div id="work_header">
+						<p id="work_title">Work</p>
+						<button id="close_button2"><i class="fa-solid fa-x"></i></button>
+					</div>
+					<div id="products">
+						<p id="products_title">Visit More LinkedIn Products</p>
+						<div id="products_list">
+							<button class="product_nav"><a class="product_link"
+									href="https://www.linkedin.com/learning/"><img class="product_icon"
+										src="./assets/sidebar_ico/learning.svg" alt="">Learning</button></a>
+							<button class="product_nav"><a class="product_link"
+									href="https://www.linkedin.com/insights"><img class="product_icon"
+										src="./assets/sidebar_ico/insights.svg" alt="">Insights</button></a>
+							<button class="product_nav"><a class="product_link"
+									href="https://www.linkedin.com/talent/post-a-job"><img class="product_icon"
+										src="./assets/sidebar_ico/post.svg" alt="">Post a job</button></a>
+							<button class="product_nav"><a class="product_link"
+									href="https://www.linkedin.com/campaignmanager/accounts"><img class="product_icon"
+										src="./assets/sidebar_ico/advertise.svg" alt="">Advertise</button></a>
+							<button class="product_nav"><a class="product_link"
+									href="https://www.linkedin.com/premium/products/?intentType=FIND_LEADS"><img
+										class="product_icon" src="./assets/sidebar_ico/leads.svg" alt="">Find
+									Leads</button></a>
+							<button class="product_nav"><a class="product_link"
+									href="https://www.linkedin.com/groups"><img class="product_icon"
+										src="./assets/sidebar_ico/groups.svg" alt="">Groups</button></a>
+							<button class="product_nav"><a class="product_link"
+									href="https://www.linkedin.com/services"><img class="product_icon"
+										src="./assets/sidebar_ico/services.svg" alt="">Services Marketplace</button></a>
+						</div>
+					</div>
+					<div id="services">
+						<p id="services_title">LinkedIn Business Services</p>
+						<div id="services_list">
+							<a class="services_nav" href="https://business.linkedin.com/talent-solutions">Talent
+								Solutions <p>Find, attract and recruit talent</p></a>
+							<a class="services_nav" href="https://business.linkedin.com/sales-solutions">Sales Solutions
+								<p>Unlock sales opportunities</p>
+							</a>
+							<a class="services_nav" href="https://www.linkedin.com/talent/post-a-job">Post a job for
+								free <p>Get your job in front of quality candidates</p></a>
+							<a class="services_nav"
+								href="https://business.linkedin.com/marketing-solutions/ads">Marketing Solutions <p>
+									Acquire customers and grow your business</p></a>
+							<a class="services_nav"
+								href="https://learning.linkedin.com/?veh=learning_solutions">Learning Solutions <p>
+									Develop talent across your organization</p></a>
+						</div>
+						<a href="https://www.linkedin.com/company/setup/new/" id="create_page">Create a Company Page <i
+								class="fa-solid fa-plus"></i></a>
+					</div>
+				</div>
+				<div id="dim">
+				</div>
+			</div>
 		</div>
+		<a id="free_premium" href="https://www.linkedin.com/premium/products/">Try Premium for free</a>
 	</nav>
 	<div id="body">
 		<div id="menu">
@@ -135,9 +195,149 @@
 							class="fa-solid fa-magnifying-glass"></i> Database Administrator</a></button>
 			</div>
 			<div id="recommended">
-
+				<p id="recommended_title">Recommended for you</p>
+				<p id="recommended_desc">Based on your profile and search history</p>
+				<div class="job">
+					<img class="company_img" src="./assets/company_img/brainnest.jpg" alt="">
+					<a class="job_url" href="https://www.linkedin.com/jobs/view/3447558419/">
+						<p class="job_name">Junior Python Developer (Remote Internship)</p>
+						<p class="job_company">Brainnest</p>
+						<p class="job_location">Hanoi, Hanoi, Vietnam (Remote)</p>
+						<p class="job_info">2 days ago •<span class="applicant"> 7 applicants</span></p>
+					</a>
+				</div>
+				<div class="job">
+					<img class="company_img" src="./assets/company_img/binance.jpg" alt="">
+					<a class="job_url" href="https://www.linkedin.com/jobs/view/3436420657/">
+						<p class="job_name">Senior Front-end Developer - SEO</p>
+						<p class="job_company">Binance</p>
+						<p class="job_location"> Ho Chi Minh City, Ho Chi Minh City, Vietnam (Remote)</p>
+						<p class="job_info">2 weeks ago •<span class="applicant"> 15 applicants</span></p>
+					</a>
+				</div>
+				<a href="https://www.linkedin.com/jobs/collections/recommended" id="show_all">
+					<p>Show all <i class="fa-solid fa-arrow-right"></i></p>
+				</a>
+			</div>
+			<div id="try_premium">
+				<img src="./assets/user_img/user.jpg" alt="" id="user_img_premium">
+				<div id="premium_content">
+					<p id="premium_title">Try Premium to see jobs where you would be a top applicant</p>
+					<div id="premium_user">
+						<img src="./assets/user_img/premium_user.png" alt="" class="premium_img not">
+						<img src="./assets/user_img/premium_user1.png" alt="" class="premium_img">
+						<img src="./assets/user_img/premium_user2.png" alt="" class="premium_img this">
+						<p id="premium_number">Millions of members use Premium</p>
+					</div>
+					<button id="try"><a href="https://www.linkedin.com/premium/products" id="try_text">Try Free for 1
+							Month</a></button>
+				</div>
+			</div>
+			<div id="more_jobs">
+				<p id="recommended_title">More jobs for you</p>
+				<p id="recommended_desc">Based on your profile and search history</p>
+				<div class="job">
+					<img class="company_img" src="./assets/company_img/appen.jpg" alt="">
+					<a class="job_url"
+						href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3460328431">
+						<p class="job_name">Data Collection Project For English Speakers in Vietnam</p>
+						<p class="job_company">Appen</p>
+						<p class="job_location">HChí Linh, Hai Duong, Vietnam (Remote)</p>
+						<p class="job_info">2 days ago •<span class="applicant"> 2 applicants</span></p>
+					</a>
+				</div>
+				<div class="job">
+					<img class="company_img" src="./assets/company_img/hcltech.jpg" alt="">
+					<a class="job_url"
+						href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3435579618">
+						<p class="job_name">Dotnet Developer</p>
+						<p class="job_company">HCLTech Vietnam</p>
+						<p class="job_location">Hanoi, Hanoi, Vietnam (On-site) </p>
+						<p class="job_info">2 weeks ago •<span class="applicant"> 16 applicants</span></p>
+					</a>
+				</div>
+				<div class="job">
+					<img class="company_img" src="./assets/company_img/telus.jpg" alt="">
+					<a class="job_url"
+						href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3453471487">
+						<p class="job_name">Work From Home Vietnam</p>
+						<p class="job_company">TELUS International</p>
+						<p class="job_location">Hanoi, Hanoi, Vietnam (Remote) </p>
+						<p class="job_info">1 weeks ago •<span class="applicant"> Over 200 applicants</span></p>
+					</a>
+				</div>
+				<div class="job">
+					<img class="company_img" src="./assets/company_img/turing.jpg" alt="">
+					<a class="job_url"
+						href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3464298985">
+						<p class="job_name">Remote Python/Django Developer Jobs</p>
+						<p class="job_company">Turing</p>
+						<p class="job_location">Vietnam (Remote) </p>
+						<p class="job_info">1 weeks ago •<span class="applicant"> 1 applicant</span></p>
+					</a>
+				</div>
+				<div class="job">
+					<img class="company_img" src="./assets/company_img/ibm.jpg" alt="">
+					<a class="job_url"
+						href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3445449360">
+						<p class="job_name">Partner Technical Specialist-Automation (Graduate)</p>
+						<p class="job_company">IBM</p>
+						<p class="job_location">Hanoi, Hanoi, Vietnam (On-site) </p>
+						<p class="job_info">2 weeks ago •<span class="applicant"> 4 applicants</span></p>
+					</a>
+				</div>
+				<div class="job">
+					<img class="company_img" src="./assets/company_img/acg.jpg" alt="">
+					<a class="job_url"
+						href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3408797626">
+						<p class="job_name">Full Stack Developer</p>
+						<p class="job_company">Aloha Consulting Group </p>
+						<p class="job_location">Hanoi, Hanoi, Vietnam (On-site)</p>
+						<p class="job_info">1 months ago •<span class="applicant"> 1 applicant</span></p>
+					</a>
+				</div>
+				<div class="job">
+					<img class="company_img" src="./assets/company_img/mbbank.jpg" alt="">
+					<a class="job_url"
+						href="https://www.linkedin.com/jobs/collections/recommended/?currentJobId=3436901244">
+						<p class="job_name">Platform Development/ System Tuning Engineer</p>
+						<p class="job_company">MBBank</p>
+						<p class="job_location">Hanoi, Hanoi, Vietnam (On-site) </p>
+						<p class="job_info">2 weeks ago •<span class="applicant"> 4 applicants</span></p>
+					</a>
+				</div>
 			</div>
 		</div>
+		<div id="Footer">
+			<div id="guidance">
+				<p id="guidance_title">Job seeker guidance</p#>
+				<p id="guidance_desc">Recommended based on your activity</p>
+				<a href="http://www.linkedin.com/learning/subscription/career-guidance-hub" id="hub">
+					<p id="hub_text">I want to improve my resume</p> <img id="hub_img"
+						src="./assets/sidebar_img/resume.gif" alt="">
+				</a>
+				<p id="guide_desc">Explore our curated guide of expert-led courses, such as how to improve your resume
+					and grow your network, to help you land your next opportunity.</p>
+				<a href="http://www.linkedin.com/learning/subscription/career-guidance-hub" id="hub2">Show more <i
+						class="fa-solid fa-arrow-right"></i></a>
+			</div>
+			<div id="footer_link">
+				<a class="footer_nav" href="https://about.linkedin.com/">About</a>
+				<a class="footer_nav" href="https://www.linkedin.com/accessibility">Accessibility</a>
+				<a class="footer_nav" href="https://www.linkedin.com//help/linkedin">Help Center</a>
+				<a class="footer_nav" href="https://www.linkedin.com/help/linkedin/answer/62931">Ad choices</a>
+				<a class="footer_nav" href="https://www.linkedin.com/ad/start">Advertising</a>
+			</div>
+			<div id="copyright">
+				<img src="./assets/favicon/logo_full.svg" alt="" id="logo_full">
+				<p id="copyright_text">LinkedIn Corporation © 2023</p>
+			</div>
+		</div>
+	</div>
+	<div id="message">
+		<img src="./assets/user_img/user.jpg" alt="">
+		<p>Messaging</p>
+
 	</div>
 	<script src="script.js"></script>
 </body>
